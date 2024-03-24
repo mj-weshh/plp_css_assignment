@@ -1,0 +1,102 @@
+/*
+Header Styling:
+Apply a background color and add padding for style.
+Introduction Section:
+Use a different background color and set margins for spacing.
+Skills Display:
+List your skills with bordered list items and padding.
+Adjust margins for spacing between skills.
+Contact Information:
+Apply a background color and use padding for clarity.
+Responsive Design:
+Ensure responsiveness with media queries.
+Adjust margins and padding for different screen sizes.
+*/
+body{
+     background-color: #7d6b57;
+     color: white;
+     font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+     background-color: #666b5e;
+     text-align: center;
+     color: #d9d0b4;
+     padding: 20px;
+     margin: 20px;
+     border-radius: 10px;
+}
+.introduction{
+     background-color: #d9d0b4;
+     text-align: center;
+     color: black;
+     padding: 20px;
+     border-radius: 10px;
+     margin: 20px;
+}
+.skills{
+     background-color: #879e82;
+     border: 2px solid black;
+     border-radius: 10px;
+     padding: 20px;
+     margin: 20px;
+     color: black;
+}
+.contact{
+     background-color: #d9d0b4;
+     margin: 20px;
+     display: inline;
+     float: left;
+     overflow: hidden;
+     justify-content: space-evenly;
+     color: black;
+     border-radius: 10px;
+     width: 97%;
+}
+.contact ul{
+     list-style-type: none;
+     margin: 20px;
+     padding: 20px;
+     overflow: hidden;
+}
+.contact ul li{
+     display: inline;
+     float: left;
+     justify-content: space-between;
+     margin: 20px;
+     padding-right: 20px;
+}
+.contact ul li a{
+     padding: 20px;
+     border-radius: 10px;
+     text-decoration: none;
+     color: black;
+}
+.contact ul li a:active{
+     text-decoration: underline;
+     color: black;
+}
+.contact ul li a:hover{
+     text-decoration: underline;
+     color: black;
+     background-color: #7d6b57;
+}
+@media screen and (max-width: 600px) {
+     .contact{
+          margin-right: 20px;
+          width: 100%;
+     }
+     .contact ul {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 10px;
+          margin-right: 10px;
+     }
+     .contact ul li {
+         margin-bottom: 5px;
+     }
+     main {
+         flex-direction: column;
+     }
+ }
